@@ -1,0 +1,16 @@
+<div class="container">
+    <ul>
+        <li *ngFor="let user of users">
+            <span>Nome: {{ user.name }}/  Email : {{user.email}}/ Telefone: {{ user.tel }} </span> 
+            <button routerLink="/users/{{user.id}}" >Editar</button>
+        </li>
+        <div>
+            <button>Criar Usuário</button>
+        </div>
+        <div>
+            <button>Próxima Pagina</button>
+            <button>Pagina Anterior</button>
+    
+        </div>
+    </ul>
+</div>

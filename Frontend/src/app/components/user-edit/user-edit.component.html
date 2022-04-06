@@ -1,0 +1,12 @@
+<div class = "container">
+    <h2>Editar Usuario</h2>
+
+    <form class = "container-form">
+        <input name="name"  type="text" [(ngModel)]='name'>
+        <input name="pass"  type="password" [(ngModel)]='pass'>
+        <input name="email" type="email" [(ngModel)]='email'>
+        <input name="tel" type="text" [(ngModel)]='tel'>
+        <button type="submit"(click) = "updateUser()">Enviar</button>
+    </form>
+    <strong *ngIf="edited">Usuario Editado!!</strong>
+</div>
