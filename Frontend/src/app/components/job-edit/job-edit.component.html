@@ -1,0 +1,14 @@
+<div class = "container">
+    <h2>Editar Job</h2>
+
+    <form >
+        <input name="name"  type="text" [(ngModel)]='name'>
+        <input name="status"  type="checkbox" [(ngModel)]='status'>
+        <input name="recurrence" type="text" [(ngModel)]='recurrence'>
+        <input name="recurrence_value" type="text" [(ngModel)]='recurrence_value'>
+        <input name="interval"  type="text" [(ngModel)]='interval'>
+        <input name="fixedSchedule"  type="text" [(ngModel)]='fixed_schedule'>
+        <button type="submit"(click) = "updateJob()">Enviar</button>
+    </form>
+    <strong *ngIf="edited">Job Editado!!</strong>
+</div>

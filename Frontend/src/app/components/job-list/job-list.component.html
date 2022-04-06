@@ -1,0 +1,22 @@
+<div class="container">
+    <ul>
+        <li *ngFor="let job of jobs">
+            <span>
+                Nome: {{ job.name }}/  Status : <span *ngIf="job.status">Ativo</span> <span *ngIf="!job.status"> Inativo</span>/ Recorrencia: {{ job.recurrence }}/ Valor da Recorrencia: {{job.recurrence_value}} 
+                <span *ngIf="job.fixed_schedule">Horario Fixo: {{job.fixed_schedule | date: 'fullDate' }}</span> /
+                <span *ngIf="job.created_at">Hora de Criação: {{job.created_at | date: 'fullDate' }} </span> /
+                <span *ngIf="job.interval">Intervalo: {{job.interval | date: 'fullDate' }} </span> 
+                </span>
+            <button routerLink="/jobs/{{job.id}}" >Editar</button>
+        </li>
+        <div>
+            <button>Criar Job</button>
+        </div>
+        <div>
+            <button>Próxima Pagina</button>
+            <button>Pagina Anterior</button>
+    
+        </div>
+    </ul>
+</div>
+
