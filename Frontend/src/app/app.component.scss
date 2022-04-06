@@ -1,0 +1,45 @@
+header {
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+        margin-top: 2rem;
+        font-size: 2rem;
+    }
+  }
+
+  nav {
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    a {
+      display: inline-block;
+      position: relative;
+      padding: 0 0.5rem;
+      height: 5rem;
+      line-height: 5rem;
+      color: var(--gray-300);
+  
+      transition: color 0.2s;
+  
+      &:hover {
+        color: var(--purple-800);
+      }
+  
+      & + a {
+        margin-left: 0.5rem;
+      }
+    }
+  }
